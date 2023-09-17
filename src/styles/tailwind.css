@@ -1,0 +1,44 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .warning-text {
+    @apply text-base text-center text-red-700 font-semibold;
+  }
+}
+
+.background-gradient:hover {
+  background: linear-gradient(45deg, #5a9bff, #ae3ce7, #f3398b, #c02929, #000000);
+}
+
+@keyframes AnimationName {
+  0%,
+  100% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+}
+
+@font-face {
+  font-family: 'LINESeedKR';
+  src: url('../../public/assets/fonts/WOFF2/LINESeedKR-Bd.woff2') format('woff2'),
+    url('../../public/assets/fonts/WOFF/LINESeedKR-Bd.woff') format('woff');
+  font-weight: 700;
+}
+
+@font-face {
+  font-family: 'LINESeedKR';
+  src: url('../../public/assets/fonts/WOFF2/LINESeedKR-Rg.woff2') format('woff2'),
+    url('../../public/assets/fonts/WOFF/LINESeedKR-Rg.woff') format('woff');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'LINESeedKR';
+  src: url('../../public/assets/fonts/WOFF2/LINESeedKR-Th.woff2') format('woff2'),
+    url('../../public/assets/fonts/WOFF/LINESeedKR-Th.woff') format('woff');
+  font-weight: 100;
+}

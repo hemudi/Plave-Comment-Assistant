@@ -4,7 +4,7 @@
   "author": "Heasam Smoothie",
   "homepage_url": "https://twitter.com/dev_smoothie",
   "description": "플레이브 다음 공식 팬카페에서 멤버들의 댓글을 스크랩해서 보기 쉽게 도와주는 확장 프로그램",
-  "version": "1.0",
+  "version": "1.0.1",
   "permissions": ["activeTab"],
   "host_permissions": ["https://cafe.daum.net/plave/"],
   "action": {

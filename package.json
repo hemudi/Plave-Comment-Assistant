@@ -1,6 +1,6 @@
 {
   "name": "plave_comment_assistant",
-  "version": "1.0",
+  "version": "1.0.1",
   "description": "plave_comment_scrapper",
   "scripts": {
     "start": "webpack --watch --config webpack/webpack.dev.js",

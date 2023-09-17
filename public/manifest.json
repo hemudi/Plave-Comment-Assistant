@@ -1,0 +1,46 @@
+{
+  "manifest_version": 3,
+  "name": "Plave Comment Assistant",
+  "author": "Heasam Smoothie",
+  "homepage_url": "https://twitter.com/dev_smoothie",
+  "description": "플레이브 다음 공식 팬카페에서 멤버들의 댓글을 스크랩해서 보기 쉽게 도와주는 확장 프로그램",
+  "version": "1.0",
+  "permissions": ["activeTab"],
+  "host_permissions": ["https://cafe.daum.net/plave/"],
+  "action": {
+    "default_title": "Plave Comment Assistant",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "assets/icons/logo/ic_logo_1_16.png",
+      "32": "assets/icons/logo/ic_logo_1_32.png",
+      "48": "assets/icons/logo/ic_logo_1_48.png",
+      "128": "assets/icons/logo/ic_logo_2_128.png"
+    }
+  },
+  "icons": {
+    "16": "assets/icons/logo/ic_logo_1_16.png",
+    "32": "assets/icons/logo/ic_logo_1_32.png",
+    "48": "assets/icons/logo/ic_logo_1_48.png",
+    "128": "assets/icons/logo/ic_logo_2_128.png"
+  },
+  "background": {
+    "service_worker": "serviceWorker.js"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://cafe.daum.net/plave", "https://cafe.daum.net/plave/*", "https://cafe.daum.net/plave/*/*"],
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [
+    {
+      "resources": [
+        "assets/icons/logo/ic_logo_1_16.png",
+        "assets/icons/logo/ic_logo_1_32.png",
+        "assets/icons/logo/ic_logo_1_48.png",
+        "assets/icons/logo/ic_logo_1_128.png"
+      ],
+      "matches": ["http://*/*", "https://*/*"]
+    }
+  ]
+}

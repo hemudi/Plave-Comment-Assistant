@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "compilerOptions": {
+    "types": ["chrome"],
+    "lib": ["dom", "dom.iterable", "esnext"],
+    "target": "ESNext",
+    "module": "ESNext",
+    "jsx": "react-jsx",
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "strict": true,
+    "noImplicitAny": false,
+    "forceConsistentCasingInFileNames": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "baseUrl": "./",
+    "paths": {
+      "@constants/*": ["src/constants/*"],
+      "@contexts/*": ["src/contexts/*"],
+      "@styles/*": ["src/styles/*"],
+      "@utils/*": ["src/utils/*"],
+      "@store/*": ["src/store/*"],
+      "@popup/*": ["src/contexts/popup/*"],
+      "@serviceWorker/*": ["src/contexts/serviceWorker/*"],
+      "@contentScript/*": ["src/contexts/contentScript/*"]
+    }
+  },
+  "include": ["src", "tailwind.config.js", "postcss.config.js"],
+  "exclude": ["./dist/"]
+}

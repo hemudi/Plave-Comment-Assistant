@@ -1,0 +1,9 @@
+.scrap_btn {
+  padding: 0 21px;
+}
+
+.scrap_img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

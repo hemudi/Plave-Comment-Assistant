@@ -1,0 +1,37 @@
+{
+  "env": {
+    "browser": true
+  },
+  "extends": ["airbnb", "airbnb-typescript", "airbnb/hooks", "prettier", "plugin:@typescript-eslint/recommended"],
+  "plugins": ["@typescript-eslint"],
+  "globals": {
+    "chrome": "readonly"
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "rules": {
+    "no-var": "off",
+    "no-alert": "off",
+    "no-console": "off",
+    "no-plusplus": "off",
+    "no-param-reassign": "off",
+    "consistent-return": "off",
+    "no-useless-return": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/jsx-no-useless-fragment": "off",
+    "react/jsx-props-no-spreading": "off",
+    "react/require-default-props": "off",
+    "react/prop-types": "off",
+    "react/button-has-type": "off",
+    "react/function-component-definition": [
+      2,
+      {
+        "namedComponents": "arrow-function"
+      }
+    ],
+    "@typescript-eslint/no-explicit-any": "off"
+  }
+}
